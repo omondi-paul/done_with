@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "format:{MM}-{item_name}-{##}",
+ "autoname": "format:{item_name}",
  "creation": "2024-02-09 18:08:11.897541",
  "default_view": "List",
  "doctype": "DocType",
@@ -10,21 +11,23 @@
  "field_order": [
   "item_name",
   "acquired_on",
+  "route",
   "column_break_8s9gm",
   "price",
   "image",
   "is_published",
   "section_break_5d9ch",
   "description",
-  "route"
+  "interests_section",
+  "shown_interests"
  ],
  "fields": [
   {
    "fieldname": "item_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_list_view": 1,
-   "label": "Item Name",
-   "reqd": 1
+   "label": "Item Name"
   },
   {
    "fieldname": "acquired_on",
@@ -66,20 +69,32 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route"
+   "label": "Route",
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "is_published",
    "fieldtype": "Check",
    "label": "Is Published"
+  },
+  {
+   "fieldname": "interests_section",
+   "fieldtype": "Section Break",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "shown_interests",
+   "fieldtype": "Table",
+   "label": "Shown Interests",
+   "options": "FirstHand"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-02-10 07:34:31.870049",
+ "modified": "2024-03-02 12:32:14.136240",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Listing",
