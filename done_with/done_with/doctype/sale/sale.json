@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{seller_name}-{item_id}",
+ "creation": "2024-03-15 11:45:11.828055",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seller_email",
+  "item_id",
+  "buyer_email",
+  "status",
+  "payment_type",
+  "amount",
+  "datetime",
+  "cancel_transaction"
+ ],
+ "fields": [
+  {
+   "fieldname": "seller_email",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Seller Email",
+   "options": "User Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buyer_email",
+   "fieldtype": "Data",
+   "label": "Buyer Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Data",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancel_transaction",
+   "fieldtype": "Check",
+   "label": "Cancel Transaction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-15 11:54:25.339336",
+ "modified_by": "Administrator",
+ "module": "Done With",
+ "name": "Sale",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

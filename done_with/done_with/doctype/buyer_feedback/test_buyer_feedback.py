@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFirstHand(FrappeTestCase):
+class TestBuyerFeedback(FrappeTestCase):
 	pass
