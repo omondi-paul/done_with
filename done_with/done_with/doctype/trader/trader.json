@@ -19,8 +19,8 @@
   "column_break_9zxt1",
   "photo",
   "sales_tab",
+  "list_item",
   "received_bids",
-  "item_on_sale",
   "sales",
   "purchase_tab",
   "purchase_history",
@@ -118,21 +118,21 @@
    "options": "Received Bid"
   },
   {
-   "fieldname": "item_on_sale",
-   "fieldtype": "Table",
-   "label": "Item On Sale",
-   "options": "My Item"
-  },
-  {
    "fieldname": "buyer_ratings",
    "fieldtype": "Table",
    "label": "Buyer  Ratings",
    "options": "Seller Feedback"
+  },
+  {
+   "fieldname": "list_item",
+   "fieldtype": "Table",
+   "label": "List Item",
+   "options": "List Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 14:29:15.702580",
+ "modified": "2024-03-15 15:36:54.263484",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Trader",

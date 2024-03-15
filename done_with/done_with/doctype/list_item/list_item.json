@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_name}-{seller}",
+ "creation": "2024-03-15 15:25:05.084674",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "condition",
+  "price",
+  "date_listed",
+  "seller_id",
+  "column_break_ifjyv",
+  "category",
+  "status",
+  "description",
+  "about_item",
+  "image"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.item_name!=null",
+   "fieldname": "seller_id",
+   "fieldtype": "Link",
+   "label": "Seller ID",
+   "options": "Trader",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.item_name!=null",
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "depends_on": "// eval:doc.item_name!=null",
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "\nNew\nUsed"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_ifjyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "\nFood Stuff\nElectronics\nWearables"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nPending\nSold"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "About Seller"
+  },
+  {
+   "fieldname": "about_item",
+   "fieldtype": "Data",
+   "label": "About Item"
+  },
+  {
+   "depends_on": "eval:doc.item_name!=null",
+   "fieldname": "date_listed",
+   "fieldtype": "Date",
+   "label": "Date Listed",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-15 16:21:27.689138",
+ "modified_by": "Administrator",
+ "module": "Done With",
+ "name": "List Item",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

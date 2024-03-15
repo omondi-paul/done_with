@@ -4,5 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class Purchase(Document):
+class ListItem(Document):
 	pass
