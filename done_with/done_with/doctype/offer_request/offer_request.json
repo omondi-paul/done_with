@@ -6,11 +6,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "buyer_name",
   "buyer_email",
+  "buyer_name",
   "contact",
-  "price_offer",
-  "item"
+  "item",
+  "price_offer"
  ],
  "fields": [
   {
@@ -22,7 +22,8 @@
    "fieldname": "buyer_email",
    "fieldtype": "Link",
    "label": "Buyer Email",
-   "options": "Trader"
+   "options": "Trader",
+   "reqd": 1
   },
   {
    "fieldname": "contact",
@@ -48,10 +49,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 12:49:19.027740",
+ "modified": "2024-03-15 13:24:30.625274",
  "modified_by": "Administrator",
  "module": "Done With",
- "name": "Item Request",
+ "name": "Offer Request",
  "owner": "Administrator",
  "permissions": [
   {

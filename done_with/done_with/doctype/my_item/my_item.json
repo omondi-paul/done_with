@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_id}",
+ "creation": "2024-03-15 14:27:53.049137",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_id",
+  "seller_id",
+  "price"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Data",
+   "label": "item_id"
+  },
+  {
+   "fieldname": "seller_id",
+   "fieldtype": "Link",
+   "label": "Seller_id",
+   "options": "Trader"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "price"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-15 14:29:00.130734",
+ "modified_by": "Administrator",
+ "module": "Done With",
+ "name": "My Item",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{item_id}-{bidder}",
+ "creation": "2024-03-15 13:40:21.251045",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seller_id",
+  "item_id",
+  "bidder",
+  "bidder_rating",
+  "datetime",
+  "customer",
+  "decision"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Item ID",
+   "options": "Item on Sale"
+  },
+  {
+   "fieldname": "bidder",
+   "fieldtype": "Link",
+   "label": "Bidder",
+   "options": "Trader"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "decision",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Decision",
+   "options": "\nAccept\nReject"
+  },
+  {
+   "fieldname": "seller_id",
+   "fieldtype": "Link",
+   "label": "Seller ID",
+   "options": "Trader"
+  },
+  {
+   "fieldname": "bidder_rating",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Bidder Rating"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-15 13:59:15.276463",
+ "modified_by": "Administrator",
+ "module": "Done With",
+ "name": "Received Bid",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

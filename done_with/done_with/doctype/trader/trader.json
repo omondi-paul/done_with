@@ -19,11 +19,13 @@
   "column_break_9zxt1",
   "photo",
   "sales_tab",
+  "received_bids",
+  "item_on_sale",
   "sales",
   "purchase_tab",
   "purchase_history",
   "ratings_tab",
-  "sale_rating_tab",
+  "buyer_ratings",
   "seller_ratings"
  ],
  "fields": [
@@ -75,12 +77,6 @@
    "options": "Sale"
   },
   {
-   "fieldname": "sale_rating_tab",
-   "fieldtype": "Table",
-   "label": "Buyer  Ratings",
-   "options": "Seller Feedback"
-  },
-  {
    "fieldname": "purchase_tab",
    "fieldtype": "Tab Break",
    "label": "PURCHASES"
@@ -114,11 +110,29 @@
    "fieldname": "photo",
    "fieldtype": "Attach Image",
    "label": "Photo"
+  },
+  {
+   "fieldname": "received_bids",
+   "fieldtype": "Table",
+   "label": "Received Bids",
+   "options": "Received Bid"
+  },
+  {
+   "fieldname": "item_on_sale",
+   "fieldtype": "Table",
+   "label": "Item On Sale",
+   "options": "My Item"
+  },
+  {
+   "fieldname": "buyer_ratings",
+   "fieldtype": "Table",
+   "label": "Buyer  Ratings",
+   "options": "Seller Feedback"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 13:05:33.052332",
+ "modified": "2024-03-15 14:29:15.702580",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Trader",
