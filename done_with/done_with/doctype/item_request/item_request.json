@@ -20,8 +20,9 @@
   },
   {
    "fieldname": "buyer_email",
-   "fieldtype": "Data",
-   "label": "Buyer Email"
+   "fieldtype": "Link",
+   "label": "Buyer Email",
+   "options": "Trader"
   },
   {
    "fieldname": "contact",
@@ -47,7 +48,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 11:08:46.683407",
+ "modified": "2024-03-15 12:49:19.027740",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Item Request",

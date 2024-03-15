@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{trader_email}",
+ "creation": "2024-03-15 12:29:14.150677",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_tab",
+  "trader_name",
+  "trader_email",
+  "column_break_q7mka",
+  "trader_contact",
+  "average_rating",
+  "section_break_tatno",
+  "about",
+  "column_break_9zxt1",
+  "photo",
+  "sales_tab",
+  "sales",
+  "purchase_tab",
+  "purchase_history",
+  "ratings_tab",
+  "sale_rating_tab",
+  "seller_ratings"
+ ],
+ "fields": [
+  {
+   "fieldname": "trader_name",
+   "fieldtype": "Data",
+   "label": "Trader Name"
+  },
+  {
+   "fieldname": "trader_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Trader Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trader_contact",
+   "fieldtype": "Data",
+   "label": "Trader Contact"
+  },
+  {
+   "fieldname": "average_rating",
+   "fieldtype": "Data",
+   "label": "Average Rating"
+  },
+  {
+   "fieldname": "profile_tab",
+   "fieldtype": "Tab Break",
+   "label": "PROFILE"
+  },
+  {
+   "fieldname": "about",
+   "fieldtype": "Small Text",
+   "label": "About"
+  },
+  {
+   "fieldname": "column_break_q7mka",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_tab",
+   "fieldtype": "Tab Break",
+   "label": "SALES"
+  },
+  {
+   "fieldname": "sales",
+   "fieldtype": "Table",
+   "label": "Sales",
+   "options": "Sale"
+  },
+  {
+   "fieldname": "sale_rating_tab",
+   "fieldtype": "Table",
+   "label": "Buyer  Ratings",
+   "options": "Seller Feedback"
+  },
+  {
+   "fieldname": "purchase_tab",
+   "fieldtype": "Tab Break",
+   "label": "PURCHASES"
+  },
+  {
+   "fieldname": "purchase_history",
+   "fieldtype": "Table",
+   "label": "Purchase History",
+   "options": "Purchase"
+  },
+  {
+   "fieldname": "section_break_tatno",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ratings_tab",
+   "fieldtype": "Tab Break",
+   "label": "RATINGS"
+  },
+  {
+   "fieldname": "seller_ratings",
+   "fieldtype": "Table",
+   "label": "Seller Ratings",
+   "options": "Buyer Feedback"
+  },
+  {
+   "fieldname": "column_break_9zxt1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-15 13:05:33.052332",
+ "modified_by": "Administrator",
+ "module": "Done With",
+ "name": "Trader",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

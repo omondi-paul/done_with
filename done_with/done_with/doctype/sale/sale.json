@@ -21,26 +21,36 @@
   {
    "fieldname": "seller_email",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Seller Email",
-   "options": "User Profile",
+   "options": "Trader",
    "reqd": 1
   },
   {
    "fieldname": "item_id",
    "fieldtype": "Data",
+   "in_filter": 1,
    "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Item ID",
    "reqd": 1
   },
   {
    "fieldname": "buyer_email",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Buyer Email"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "\nIn Progress\nCompleted"
   },
@@ -69,7 +79,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-15 11:54:25.339336",
+ "modified": "2024-03-15 13:07:03.530003",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Sale",
