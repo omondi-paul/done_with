@@ -16,7 +16,8 @@
   "category",
   "status",
   "description",
-  "about_item"
+  "about_item",
+  "offer_price"
  ],
  "fields": [
   {
@@ -71,11 +72,16 @@
    "fieldname": "about_item",
    "fieldtype": "Data",
    "label": "About Item"
+  },
+  {
+   "fieldname": "offer_price",
+   "fieldtype": "Button",
+   "label": "Offer Price"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-15 15:01:05.706623",
+ "modified": "2024-03-16 10:27:58.360617",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Item on Sale",
