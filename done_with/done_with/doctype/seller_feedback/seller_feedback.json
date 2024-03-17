@@ -27,7 +27,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Item",
-   "options": "Item on Sale",
+   "options": "Listed Item",
    "reqd": 1
   },
   {
@@ -55,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-15 13:03:38.162642",
+ "modified": "2024-03-16 19:16:53.763792",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Seller Feedback",

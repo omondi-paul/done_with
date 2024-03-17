@@ -1,39 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{item}-{bidder_email}",
  "creation": "2024-03-15 11:05:35.817940",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "buyer_email",
-  "buyer_name",
-  "contact",
   "item",
-  "price_offer"
+  "price_offer",
+  "column_break_nuz6i",
+  "bidder_email",
+  "contact",
+  "additional_contact"
  ],
  "fields": [
   {
-   "fieldname": "buyer_name",
-   "fieldtype": "Data",
-   "label": "Buyer Name"
-  },
-  {
-   "fieldname": "buyer_email",
-   "fieldtype": "Link",
-   "label": "Buyer Email",
-   "options": "Trader",
-   "reqd": 1
-  },
-  {
    "fieldname": "contact",
    "fieldtype": "Data",
-   "label": "Contact"
+   "hidden": 1,
+   "label": "Contact",
+   "read_only": 1
   },
   {
    "fieldname": "price_offer",
    "fieldtype": "Data",
-   "label": "Price Offer"
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Price Offer",
+   "reqd": 1
   },
   {
    "fieldname": "item",
@@ -44,30 +41,38 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Item",
-   "options": "Item on Sale"
+   "options": "Listed Item",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "bidder_email",
+   "fieldtype": "Link",
+   "label": "Bidder Email",
+   "options": "Trader",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nuz6i",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_contact",
+   "fieldtype": "Data",
+   "label": "Additional contact"
   }
  ],
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2024-03-15 13:24:30.625274",
+ "modified": "2024-03-17 13:05:45.022292",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Offer Request",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

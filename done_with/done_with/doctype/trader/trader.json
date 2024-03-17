@@ -23,6 +23,7 @@
   "received_bids",
   "sales",
   "purchase_tab",
+  "make_bid",
   "purchase_history",
   "ratings_tab",
   "buyer_ratings",
@@ -109,6 +110,7 @@
   {
    "fieldname": "photo",
    "fieldtype": "Attach Image",
+   "hidden": 1,
    "label": "Photo"
   },
   {
@@ -128,11 +130,17 @@
    "fieldtype": "Table",
    "label": "List Item",
    "options": "List Item"
+  },
+  {
+   "fieldname": "make_bid",
+   "fieldtype": "Table",
+   "label": "Make Bid",
+   "options": "Offer Request"
   }
  ],
- "index_web_pages_for_search": 1,
+ "image_field": "photo",
  "links": [],
- "modified": "2024-03-15 15:36:54.263484",
+ "modified": "2024-03-17 11:52:25.293689",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Trader",

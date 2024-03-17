@@ -22,7 +22,7 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Item Name",
-   "options": "Item on Sale",
+   "options": "Listed Item",
    "reqd": 1
   },
   {
@@ -50,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-15 13:01:28.076474",
+ "modified": "2024-03-16 19:16:53.369967",
  "modified_by": "Administrator",
  "module": "Done With",
  "name": "Buyer Feedback",
