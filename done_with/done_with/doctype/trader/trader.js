@@ -118,6 +118,22 @@ frappe.ui.form.on('Offer Request', {
                 }
             }
         });
+        frappe.call({
+            method: 'done_with.services.rest.add_seller',
+            args: {
+                "item_name":item_name
+            },
+            callback: function (r) {
+                if (r.message) {
+                    frappe.model.set_value(cdt, cdn, {
+                        seller: r.message
+					
+                    });
+                    
+                
+                }
+            }
+        });
 		
 
     },

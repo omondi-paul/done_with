@@ -2,7 +2,8 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "format:{item_name}-{seller_id}",
- "creation": "2024-03-15 15:25:05.084674",
+ "creation": "2024-03-22 18:41:11.633611",
+ "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -20,15 +21,7 @@
  ],
  "fields": [
   {
-   "depends_on": "eval:doc.item_name!=null",
-   "fieldname": "seller_id",
-   "fieldtype": "Link",
-   "label": "Seller ID",
-   "options": "Trader",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
+   "bold": 1,
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_filter": 1,
@@ -36,9 +29,19 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Item Name",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "bold": 1,
+   "fieldname": "condition",
+   "fieldtype": "Data",
+   "label": "Condition",
+   "options": "\nNew\nUsed",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
    "depends_on": "eval:doc.item_name!=null",
    "fieldname": "price",
    "fieldtype": "Data",
@@ -47,18 +50,22 @@
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Price",
+   "read_only": 1,
    "reqd": 1
   },
   {
-   "fieldname": "condition",
-   "fieldtype": "Link",
-   "label": "Condition",
-   "options": "Condition"
+   "depends_on": "eval:doc.item_name!=null",
+   "fieldname": "date_listed",
+   "fieldtype": "Data",
+   "label": "Date Listed",
+   "read_only": 1
   },
   {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image"
+   "depends_on": "eval:doc.item_name!=null",
+   "fieldname": "seller_id",
+   "fieldtype": "Data",
+   "label": "Seller ID",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_ifjyv",
@@ -66,39 +73,54 @@
   },
   {
    "fieldname": "category",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Category",
-   "options": "Category"
+   "read_only": 1
   },
   {
+   "bold": 1,
    "fieldname": "status",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Status",
-   "options": "Available\nPending\nSold"
+   "read_only": 1
   },
   {
    "fieldname": "about_item",
    "fieldtype": "Small Text",
-   "label": "About Item"
+   "label": "About Item",
+   "read_only": 1
   },
   {
-   "depends_on": "eval:doc.item_name!=null",
-   "fieldname": "date_listed",
-   "fieldtype": "Date",
-   "label": "Date Listed",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
    "read_only": 1
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
- "istable": 1,
  "links": [],
- "modified": "2024-03-24 13:07:19.260450",
+ "modified": "2024-03-22 18:41:11.633611",
  "modified_by": "Administrator",
  "module": "Done With",
- "name": "List Item",
+ "name": "Listed Items",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
- "permissions": [],
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
